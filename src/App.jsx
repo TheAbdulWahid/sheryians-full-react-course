@@ -1,14 +1,15 @@
-const app = ()=>{
-  return(
+import Card from './components/Card'
+const app = () => {
+  return (
     <>
-    <div id="dad">
-      <div id="son">I'm Son</div>
-      <div id="daughter">I'm Daughter</div>
-    </div>
-    <div id="uncle">
-      <div id="nephew">I'm Nephew</div>
-      <div id="niece">I'm Niece</div>
-    </div>
+      <div id="team-section">
+        <div className="container">
+          <div className="section-content">
+            <h2 className="section-title">Our Team</h2>
+            <Card />
+          </div>
+        </div>
+      </div>
     </>
   )
 }
