@@ -1,17 +1,10 @@
-import Card from './components/Card'
-const app = () => {
+import Team from './sections/Team.jsx'
+const App = () => {
   return (
     <>
-      <div id="team-section">
-        <div className="container">
-          <div className="section-content">
-            <h2 className="section-title">Our Team</h2>
-            <Card />
-          </div>
-        </div>
-      </div>
+      <Team />
     </>
   )
 }
 
-export default app;
+export default App;
