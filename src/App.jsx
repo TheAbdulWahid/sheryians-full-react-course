@@ -9,10 +9,6 @@ const app = ()=>{
       <div id="nephew">I'm Nephew</div>
       <div id="niece">I'm Niece</div>
     </div>
-    <div id="grand-father">
-      <div id="grand-son">I'm Grandson</div>
-      <div id="grand-daughter">I'm Grand Daughter</div>
-    </div>
     </>
   )
 }
