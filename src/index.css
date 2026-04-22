@@ -14,12 +14,18 @@ body {
 
 #card {
   padding: 20px;
-  background-color: teal;
-  max-width: 350px;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: calc(25% - 15px);
+}
+
+.section-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #card .contact-btn {
@@ -48,4 +54,121 @@ body {
   margin-bottom: 40px;
   font-size: 62px;
   text-align: center;
+}
+
+#card .org-icon img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+}
+
+.org-icon {
+  padding: 5px;
+  border: 1px solid #dedede;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card .bookmark {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    align-items: center;
+}
+#card .bookmark svg {
+  width: 17px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#card .bookmark span {
+  color: gray;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.org-title {
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.time-elapse,
+.job-location {
+  font-size: 10px;
+  color: #333;
+  opacity: .5;
+}
+
+.org-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  line-height: 1.2;
+}
+
+.job-title {
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.skills-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.skills-container .skill {
+  font-size: 11px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #33333326;
+  color: #333;
+  font-weight: 500;
+  width: calc(33% - 6px);
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-left .salary {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apply-btn {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 60px;
 }

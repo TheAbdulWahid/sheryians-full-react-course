@@ -1,4 +1,5 @@
-import Team from './sections/Team.jsx'
+import Team from './components/SectionTeams.jsx';
+import {Bookmark} from "lucide";
 const App = () => {
   return (
     <>
@@ -6,5 +7,4 @@ const App = () => {
     </>
   )
 }
-
 export default App;
