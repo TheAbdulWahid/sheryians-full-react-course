@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import SectionOne from "./components/SectionOne";
+import Header from "./components/chapter10/Header";
+import SectionOne from "./components/chapter10/SectionOne";
 const App = () => {
   const userData = [
     {
