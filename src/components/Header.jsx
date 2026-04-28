@@ -1,10 +1,19 @@
-import styles from '../styles/button.module.css';
+import HeaderLeft from "./HeaderLeft";
+import HeaderRight from "./HeaderRight";
 const Header = () => {
-    return (
-        <div>
-            <h1>header</h1>
-            <a className={styles.btn}>Logout</a>
+  return (
+    <header className="header px-[20px] py-[40px]">
+      <div className="container">
+        <div className="header-content flex justify-between items-center">
+          <div className="header-left">
+            <HeaderLeft />
+          </div>
+          <div className="header-right">
+            <HeaderRight />
+          </div>
         </div>
-    );
-}
+      </div>
+    </header>
+  );
+};
 export default Header;
