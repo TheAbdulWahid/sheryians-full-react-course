@@ -2,6 +2,7 @@ import Header from "./components/chapter10/Header";
 import SectionOne from "./components/chapter10/SectionOne";
 import Functions from "./components/chapter11/Functions";
 import Usestate from "./components/chapter13/Usestate";
+import Notes from "./components/notes/Notes";
 const App = () => {
   // const userData = [
   //   {
@@ -33,7 +34,7 @@ const App = () => {
   // ]
   return (
     <>
-      <Usestate/>
+      <Notes/>
     </>
   );
 };
