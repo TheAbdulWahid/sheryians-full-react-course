@@ -3,7 +3,10 @@ import { useState } from "react";
 const Notes = (e) => {
   const [notesHeading, setNotesHeading] = useState("");
   const [notesdetails, setNotesdetails] = useState("");
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(() => {
+    const storedTasks = localStorage.getItem("task");
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -11,7 +14,10 @@ const Notes = (e) => {
     const newTask = [...task];
 
     newTask.push({ notesHeading, notesdetails });
+
     setTask(newTask);
+
+    localStorage.setItem("task", JSON.stringify([...newTask]));
 
     setNotesHeading("");
     setNotesdetails("");
