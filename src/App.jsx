@@ -3,6 +3,7 @@ import SectionOne from "./components/chapter10/SectionOne";
 import Functions from "./components/chapter11/Functions";
 import Usestate from "./components/chapter13/Usestate";
 import Notes from "./components/notes/Notes";
+import UseEffect from "./components/useeffect/UseEffect";
 const App = () => {
   // const userData = [
   //   {
@@ -34,7 +35,7 @@ const App = () => {
   // ]
   return (
     <>
-      <Notes/>
+      <UseEffect/>
     </>
   );
 };
