@@ -4,6 +4,7 @@ import Functions from "./components/chapter11/Functions";
 import Usestate from "./components/chapter13/Usestate";
 import Notes from "./components/notes/Notes";
 import UseEffect from "./components/useeffect/UseEffect";
+import Gallery from "./components/gallery-project/Gallery";
 const App = () => {
   // const userData = [
   //   {
@@ -35,7 +36,7 @@ const App = () => {
   // ]
   return (
     <>
-      <UseEffect/>
+      <Gallery/>
     </>
   );
 };
