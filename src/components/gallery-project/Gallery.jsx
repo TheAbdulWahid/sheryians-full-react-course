@@ -1,5 +1,6 @@
 import { use, useEffect, useState } from "react";
 import axios from "axios";
+import Card from "./Card";
 const Gallery = () => {
   const [data, setData] = useState([]);
   const [pageNumber, setPageNumber] = useState(3);
@@ -27,19 +28,7 @@ const Gallery = () => {
     );
   } else if (data.length > 0) {
     printData = data.map((elem, index) => {
-      return (
-        <div
-          className="image-box flex items-center gap-2 flex-col w-[calc(25%-30px)]"
-          key={index}
-        >
-          <img
-            src={elem.download_url}
-            alt=""
-            className="h-[300px] object-cover w-[100%]"
-          />
-          <h3 className="text-bold text-[24px]">{elem.author}</h3>
-        </div>
-      );
+      return <Card elem={elem} />;
     });
   }
 
@@ -62,16 +51,18 @@ const Gallery = () => {
         </div>
         <div className="pagination-btn flex gap-2 justify-center items-center">
           <span
+            style={{ opacity: pageNumber > 1 ? 1 : 0.5 }}
+            aria-disabled={pageNumber <= 1}
             className="bg-white !text-black p-2 rounded w-[140px] h-[46px] inline-flex justify-center items-center"
             onClick={() => {
-              if (pageNumber > 0) {
+              if (pageNumber > 1) {
                 setPageNumber(pageNumber - 1);
-                console.log("Clicked to next");
-                console.log(response);
+                console.log("Clicked to Prev");
               } else {
-                return;
+                alert("asdasdasd");
               }
             }}
+            role="button"
           >
             Prev
           </span>
