@@ -1,10 +1,24 @@
-import Header from "./components/chapter10/Header";
+import Header from "./components/Header";
 import SectionOne from "./components/chapter10/SectionOne";
 import Functions from "./components/chapter11/Functions";
 import Usestate from "./components/chapter13/Usestate";
 import Notes from "./components/notes/Notes";
 import UseEffect from "./components/useeffect/UseEffect";
 import Gallery from "./components/gallery-project/Gallery";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Product from "./pages/Product";
+import Footer from "./components/Footer";
+import Men from "./pages/product-pages/Men";
+import Women from "./pages/product-pages/Women";
+import Kids from "./pages/product-pages/Kids";
+import Notfound from "./pages/Notfound";
+import Courses from "./pages/Courses";
+import SingleCourse from "./pages/course-pages/SingleCourse";
+import BonusConcept from "./components/BonusConcept";
+import { useState } from "react";
 const App = () => {
   // const userData = [
   //   {
@@ -34,10 +48,29 @@ const App = () => {
   //     tagColor:'brown'
   //     },
   // ]
+  const [theme, setTheme] = useState('Light')
   return (
-    <>
-      <Gallery/>
-    </>
+    // <div className="flex flex-col justify-between h-screen">
+    //   <Header />
+    //   <div className="main-content h-full w-full flex justify-center items-center text-[36px]">
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/about" element={<About />} />
+    //       <Route path="/courses" element={<Courses />}>
+    //         <Route path=":courseId" element={<SingleCourse />}/>
+    //       </Route>
+    //       <Route path="/contact" element={<Contact />} />
+    //       <Route path="/product" element={<Product />}>
+    //         <Route path="men" element={<Men />} />
+    //         <Route path="women" element={<Women />} />
+    //         <Route path="kids" element={<Kids />} />
+    //       </Route>
+    //       <Route path="*" element={<Notfound />} />
+    //     </Routes>
+    //   </div>
+    //   <Footer />
+    // </div>
+    <BonusConcept theme={theme} setTheme={setTheme} />
   );
 };
 export default App;
