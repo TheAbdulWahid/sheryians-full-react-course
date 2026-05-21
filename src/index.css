@@ -1,13 +1,31 @@
 @import "tailwindcss";
-*{
+
+* {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: #fff;
 }
-.container{
+
+.container {
   max-width: 1360px;
   margin: auto;
 }
-.section-one-right{
-  scrollbar-width : none;
+
+.section-one-right {
+  scrollbar-width: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.dark {
+    background-color: #673ab7;
 }

@@ -19,6 +19,9 @@ import Courses from "./pages/Courses";
 import SingleCourse from "./pages/course-pages/SingleCourse";
 import BonusConcept from "./components/BonusConcept";
 import { useState } from "react";
+import ChildrenProps from "./components/children-props/ChildrenProps";
+import { createContext } from "react";
+import Navbar from "./components/context-api/Navbar";
 const App = () => {
   // const userData = [
   //   {
@@ -49,6 +52,7 @@ const App = () => {
   //     },
   // ]
   const [theme, setTheme] = useState('Light')
+
   return (
     // <div className="flex flex-col justify-between h-screen">
     //   <Header />
@@ -70,7 +74,7 @@ const App = () => {
     //   </div>
     //   <Footer />
     // </div>
-    <BonusConcept theme={theme} setTheme={setTheme} />
+    <Navbar />  
   );
 };
 export default App;
